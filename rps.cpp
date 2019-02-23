@@ -8,6 +8,8 @@ using namespace std;
 int main()
 {
 			int count = 3;
+			int c = 0;
+			int u = 0;
 			while(count--)
 		{
 		system("cls");
@@ -40,22 +42,41 @@ cout<<r<<endl;
 		{
             if (compChoice == "scissors") {
                 cout<<"You win!";
+                u++ ;
             } else {
-                cout<<"Computer wins!";
+                cout<<"Computer wins!";c++;
             }
         } else if (userChoice == "paper") {
             if (compChoice == "rock") {
                 cout<<"You win!";
+                u++;
             } else {
-cout<<"Computer wins!";
+cout<<"Computer wins!";c++;
             }
         } else if (userChoice == "scissors") {
             if (compChoice == "rock") {
-                cout<<"You win!";
+                cout<<"You win!";u++;
             } else {
-                cout<<"Computer wins!";
+                cout<<"Computer wins!";c++;
             }
         }
+		}
+		if(c==u)
+		{
+			cout<<"ITS A DRAW";
+		}
+		else
+		{
+			if(c>u)
+			{
+				cout<<"BEST of 3 : Computer Wins";
+			}
+			else
+			{
+								cout<<"BEST of 3 : You Wins";
+
+			}
+			
 		}
     return 0;
 }
