@@ -60,6 +60,8 @@ cout<<"Computer wins!";c++;
                 cout<<"Computer wins!";c++;
             }
         }
+        char c;
+        cin>>c;
 		}
 		if(c==u)
 		{
@@ -78,5 +80,6 @@ cout<<"Computer wins!";c++;
 			}
 			
 		}
+		
     return 0;
 }
